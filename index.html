@@ -41,7 +41,7 @@
             <br><br>A CSS class is a name you that give to either one or many elements in your form to reference them and add some styling to them.
             <br><br>For this particular use case, we'll add a class that hides the fields that you don't want to display upon loading the page.
             <br><br><b>Step 1:</b>   Go to your form and edit the fields that you would like to remain hidden. You can find the CSS class field in the Advanced tab after you click edit. We'll name our class 'hide'.</p>
-            <img src="resources/img/css-class.JPG" alt="how to add a css class to your fields">
+            <div class="image"></div>
             <p><b>Step 2:</b> Edit the Layout Template on your form and add the following code snippet to it. This will be the styling and will take care of hiding the fields for you. Do not worry if there's anything else in there, just make sure to include the snippet between the opening and closing head tags.</p>
             <pre>
                 <code>
@@ -54,7 +54,7 @@
             </pre>
             <p><b>Step 3:</b> You'll need to add yet another snippet in but this one needs to be pasted into your form. Head over to the form you want to edit and click the Below Form tab, in the 'Look and Feel' edit section. Then, click the Source icon sitting on the right of the WYSIWYG editor and paste the contents below on the box at the bottom of the edit section.</p>
             <pre>
-                <code>
+                <code>                       
     &lt!-- Call the jQuery lib -->
     &ltscript src="https://code.jquery.com/jquery-3.6.0.js">&lt/script>
     &lt!-- This is the actual function -->

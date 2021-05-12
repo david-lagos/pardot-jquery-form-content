@@ -126,6 +126,16 @@ span + span {
     margin-top: 1rem;
 }
 
+.image {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/css-class.JPG);
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
 p {
     line-height: 1.6;
     font-size: 1.1rem;
