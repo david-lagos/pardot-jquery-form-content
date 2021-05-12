@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use jQuery to expand your Pardot forms, quite literally</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class ="logo" src="./resources/img/logo white extra space.webp" alt="">
+            <ul>
+                <li><a href="#">By Theme</a></li>
+                <li><a href="#">By Journey</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content-nav">
+                <div class="profile">
+                    <div class="profile-pic"></div>
+                    <span>David Lagos</span>
+                    <span>.</span>
+                    <span>1 min read</span>
+                </div>
+                <img src="resources/img/menu-icon.png">
+            </div>
+            <h1>Use jQuery to expand your Pardot forms, quite literally</h1>
+            <div class="form">
+                <iframe src="http://go.demo.pardot.com/l/214211/2021-01-13/2z63" width="100%" height="550" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+            </div>
+            <p>Yes, that's jQuery. A very old but powerful JavaScript library!
+            <br>jQuery has been around since 2006 and has seen plenty of releases ever since.
+            <br><br>Did you know that you can use jQuery with Pardot to add interactivity to your forms?
+            <br>Well, it turns out that you can, and it's as easy as 1 2 3. We'll show you how!
+            <br><br>The first thing you need to do to produce the effect that you just saw is adding CSS classes to the fields in your form.
+            <br><br>A CSS class is a name you that give to either one or many elements in your form to reference them and add some styling to them.
+            <br><br>For this particular use case, we'll add a class that hides the fields that you don't want to display upon loading the page.
+            <br><br><b>Step 1:</b>   Go to your form and edit the fields that you would like to remain hidden. You can find the CSS class field in the Advanced tab after you click edit. We'll name our class 'hide'.</p>
+            <img src="resources/img/css-class.JPG" alt="how to add a css class to your fields">
+            <p><b>Step 2:</b> Edit the Layout Template on your form and add the following code snippet to it. This will be the styling and will take care of hiding the fields for you. Do not worry if there's anything else in there, just make sure to include the snippet between the opening and closing head tags.</p>
+            <pre>
+                <code>
+    &ltstyle>
+        .hide {
+            display: none;
+        }
+    &lt/style>
+                </code>
+            </pre>
+            <p><b>Step 3:</b> You'll need to add yet another snippet in but this one needs to be pasted into your form. Head over to the form you want to edit and click the Below Form tab, in the 'Look and Feel' edit section. Then, click the Source icon sitting on the right of the WYSIWYG editor and paste the contents below on the box at the bottom of the edit section.</p>
+            <pre>
+                <code>
+    &lt!-- Call the jQuery lib -->
+    &ltscript src="https://code.jquery.com/jquery-3.6.0.js">&lt/script>
+    &lt!-- This is the actual function -->
+    &ltscript>
+        $(function() {
+            $( "p input" ).keydown(function() {
+                $( ".hide" ).show();
+            });
+        });
+    &lt/script>
+                </code>
+            </pre>
+            <p>And there you have it, one easy fix that makes your forms look 10 times cooler. &#x1F60E;
+            <br><br>If you're interested in this and other features, fill out the form below and Get Started with us today.</p>
+        </div>
+    </main>
+</body>
+</html>

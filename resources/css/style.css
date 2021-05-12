@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+body, header, main {
+    background-color: #2e2e2e;
+}
+
+a {
+    text-decoration: none;
+    color: #e8e8e8;
+}
+
+li + li {
+    margin-left: 1.5rem;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .logo {
+    margin-left: 13rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .container .logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+.container ul {
+    margin-right: 15.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .container ul {
+        display: none;
+    }
+}
+
+.container ul li {
+    display:inline;
+    color: #e8e8e8;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content {
+    max-width: 930px;
+    background-color: white;
+    height: auto;
+    margin: auto;
+    margin-top: 3.5rem;
+    padding: 3.5rem 6rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .content {
+        padding: 3.5rem 1rem;
+    }
+}
+
+.content-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: inline-flex;
+    width: 300px;
+    align-items: center;
+    
+}
+
+.profile-pic {
+    height: 35px;
+    width: 35px;
+    background-image: url('../img/profile-icon.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-pic + span {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    font-family: Arial;
+    color: #2e2e2e;
+}
+
+.profile-pic + span + span {
+    padding-bottom: 6px;
+}
+span + span {
+    margin-left: 0.5rem;
+    font-size: 0.80rem;
+    color:gray;
+}
+.content-nav img {
+    height: 20px;
+    width: 20px;
+}
+
+.content h1 {
+    color: #2e2e2e;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.form {
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: #2e2e2e;
+}
